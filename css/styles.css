@@ -912,19 +912,9 @@ img {
   }
 
 /* Mobile */
-  .container {
-    max-width: 428px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  }
-  @media screen and (min-width: 1158px) {
+
+
+  @media screen and (max-width: 1158px) {
     .container {
       max-width: 1158px;
       padding-left: 15px;
@@ -932,16 +922,25 @@ img {
     }
   }
 
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  } 
 
   @media (max-width: 428px) {
-    body {
-        background-image: url(../images/mobile-tablet/people-office-1-mobile.jpg);
-    }
+    .container {
+        max-width: 428px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
 
-    @media (min-device-pixel-ratio: 2) and (max-width: 428px), 
-    (min-resolution: 192dpi) and (max-width: 428px), 
-    (min-resolution: 2dppx) and (max-width: 428px) {
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 428px), 
+    screen and (min-resolution: 192dpi) and (max-width: 428px), 
+    screen and (min-resolution: 2dppx) and (max-width: 428px) {
         .hero {
             background-image: url(../images/mobile/people-office-1-mobile@2x.jpg);
         }
