@@ -911,33 +911,50 @@ img {
     height: auto;
   }
 
-/* Mobile */
+/* Mobile and Tablet*/
 
 
   @media screen and (max-width: 1158px) {
-    .container {
+    .hero {
       max-width: 1158px;
       padding-left: 15px;
       padding-right: 15px;
+      background-image: url(../images/people-office-1.jpg);
     }
   }
 
-  @media screen and (max-width: 768px) {
-    .container {
-      max-width: 768px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  } 
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1158px), 
+  screen and (min-resolution: 192dpi) and (max-width: 1158px), 
+  screen and (min-resolution: 2dppx) and (max-width: 1158px) {
+      .hero {
+          background-image: url(../images/people-office-1@2x.jpg);
+      }
+    }  
 
-  @media (max-width: 428px) {
-    .container {
+  @media screen and (max-width: 768px) {
+    .hero {
+        max-width: 768px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-image: url(/images/tablet/people-office-1-tablet.jpg);
+      }
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), 
+    screen and (min-resolution: 192dpi) and (max-width: 768px), 
+    screen and (min-resolution: 2dppx) and (max-width: 768px) {
+        .hero {
+            background-image: url(../images/tablet/people-office-1-tablet@2x.jpg);
+        }
+      }     
+
+  @media screen and (max-width: 428px) {
+    .hero {
         max-width: 428px;
         padding-left: 15px;
         padding-right: 15px;
+        background-image: url(/images/mobile/people-office-1-mobile.jpg);
       }
     }
-
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 428px), 
     screen and (min-resolution: 192dpi) and (max-width: 428px), 
     screen and (min-resolution: 2dppx) and (max-width: 428px) {
