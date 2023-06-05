@@ -108,7 +108,8 @@ img {display: block}
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
     
-    .menu {display: flex;
+    .menu {
+        display: flex;
         gap: 40px;
         margin: 0;
         padding: 0;
@@ -903,7 +904,7 @@ margin-right: 76px;
     fill: transparent;
 }
 
-/* Mobile and Tablet */
+/* Mobile, Tablet, Desktop */
 
 img {
     display: block;
@@ -911,15 +912,16 @@ img {
     height: auto;
   }
 
-/* Mobile and Tablet*/
 
 
+/* ===============Desktop=============== */
   @media screen and (max-width: 1158px) {
     .hero {
       max-width: 1158px;
       padding-left: 15px;
       padding-right: 15px;
       background-image: url(../images/people-office-1.jpg);
+      background-position: center;
     }
   }
 
@@ -928,15 +930,19 @@ img {
   screen and (min-resolution: 2dppx) and (max-width: 1158px) {
       .hero {
           background-image: url(../images/people-office-1@2x.jpg);
+          
       }
     }  
 
+
+/* ===============Tablet=============== */
   @media screen and (max-width: 768px) {
     .hero {
         max-width: 768px;
         padding-left: 15px;
         padding-right: 15px;
         background-image: url(/images/tablet/people-office-1-tablet.jpg);
+        background-position: center;
       }
     }
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), 
@@ -947,12 +953,14 @@ img {
         }
       }     
 
+/* ===============Mobile=============== */
   @media screen and (max-width: 428px) {
     .hero {
         max-width: 428px;
         padding-left: 15px;
         padding-right: 15px;
         background-image: url(/images/mobile/people-office-1-mobile.jpg);
+        background-position: center;
       }
     }
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 428px), 
