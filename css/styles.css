@@ -9,14 +9,6 @@ ul {margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
-}
-
-
-
 .header-index {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
@@ -906,67 +898,53 @@ margin-right: 76px;
 
 /* Mobile, Tablet, Desktop */
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-
-
-
-/* ===============Desktop=============== */
-  @media screen and (max-width: 1158px) {
-    .hero {
-      max-width: 1158px;
-      padding-left: 15px;
-      padding-right: 15px;
-      background-image: url(../images/people-office-1.jpg);
-      background-position: center;
-    }
-  }
-
-  @media screen and (min-device-pixel-ratio: 2) and (max-width: 1158px), 
-  screen and (min-resolution: 192dpi) and (max-width: 1158px), 
-  screen and (min-resolution: 2dppx) and (max-width: 1158px) {
-      .hero {
-          background-image: url(../images/people-office-1@2x.jpg);
-          
-      }
-    }  
-
-
-/* ===============Tablet=============== */
-  @media screen and (max-width: 768px) {
-    .hero {
-        max-width: 768px;
-        padding-left: 15px;
-        padding-right: 15px;
-        background-image: url(/images/tablet/people-office-1-tablet.jpg);
-        background-position: center;
-      }
-    }
-    @media screen and (min-device-pixel-ratio: 2) and (max-width: 768px), 
-    screen and (min-resolution: 192dpi) and (max-width: 768px), 
-    screen and (min-resolution: 2dppx) and (max-width: 768px) {
-        .hero {
-            background-image: url(../images/tablet/people-office-1-tablet@2x.jpg);
-        }
-      }     
-
 /* ===============Mobile=============== */
-  @media screen and (max-width: 428px) {
-    .hero {
-        max-width: 428px;
+
+/* default settings */
+.menu-list {
+    display: none;
+}
+.contact {
+    display: none;
+}
+
+/* default settings */
+
+.logo-web {
+
+}
+
+.mobile-btn-list {
+    margin-top: 24px;
+    margin-right: 16px;
+    border: 0;
+    background-color: #FFFFFF;
+    
+}
+.icon-mobile-btn-list {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 428px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-wight: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-wight: 1158px) {
+    .container {
+        max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
-        background-image: url(/images/mobile/people-office-1-mobile.jpg);
-        background-position: center;
-      }
     }
-    @media screen and (min-device-pixel-ratio: 2) and (max-width: 428px), 
-    screen and (min-resolution: 192dpi) and (max-width: 428px), 
-    screen and (min-resolution: 2dppx) and (max-width: 428px) {
-        .hero {
-            background-image: url(../images/mobile/people-office-1-mobile@2x.jpg);
-        }
-      }    
+}
