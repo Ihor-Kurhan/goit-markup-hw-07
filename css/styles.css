@@ -956,6 +956,8 @@ margin-right: 76px;
     display: flex;
     align-items: center;
 }
+/* ===============Mobile=============== */
+
 
 /* ===============Tablet=============== */
 @media screen and (min-width: 768px) {
@@ -979,6 +981,11 @@ margin-right: 76px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         }
+
+    .contact-container {
+        display: block;
+        gap: 40px;
+    }
     .div-header {
         display: flex;
         align-items: center;
@@ -987,8 +994,10 @@ margin-right: 76px;
         display: none;
     }
   }
+/* ===============Tablet=============== */
 
 
+/* ===============Desktop=============== */
   @media screen and (min-width: 1158px) {
     .container {
     max-width: 1158px;
@@ -1010,6 +1019,10 @@ margin-right: 76px;
     .logo-web {
         margin-right: 76px;
     }
-  }
-    
+    .contact-container {
+        display: flex;
+        gap: 40px;
+   }
+ }
+/* ===============Desktop=============== */   
 
