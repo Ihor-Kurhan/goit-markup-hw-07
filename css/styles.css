@@ -9,6 +9,11 @@ ul {margin: 0;
     padding: 0;
 }
 
+.div-header {
+    display: flex;
+    align-items: center;
+}
+
 .header-index {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
@@ -140,12 +145,6 @@ img {display: block}
 .menu-list:hover,
 .menu-list:focus {
     color: #404BBF;
-}
-
-
-.nav-header {
-    display: none;
-    align-items: center;
 }
 
 /* .contact-container {
@@ -967,7 +966,7 @@ margin-right: 76px;
         display: block;
     }
     .logo-web {
-        margin: 24px auto 24px 16px;
+        margin-right: 120px;
     }
     .menu {
         display: flex;
@@ -980,6 +979,10 @@ margin-right: 76px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         }
+    .div-header {
+        display: flex;
+        align-items: center;
+    }
   }
 
 
