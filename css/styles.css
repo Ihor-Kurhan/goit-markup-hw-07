@@ -39,8 +39,10 @@ body {font-family:var(--main-font-family);
 
 }
 
-.contact {font-style: normal;
-margin-left: auto;}
+.contact {
+    font-style: normal;
+    margin-left: auto;}
+
 img {display: block}
 
 /* hero */
@@ -101,7 +103,7 @@ img {display: block}
     }
     
     .menu {
-        display: flex;
+        display: none;
         gap: 40px;
         margin: 0;
         padding: 0;
@@ -145,10 +147,13 @@ img {display: block}
 .menu-list:focus {
     color: #404BBF;
 }
+
+
 .nav-header {
-    display: flex;
+    display: none;
     align-items: center;
 }
+
 .contact-container {
     display: flex;
     gap: 40px;
@@ -452,7 +457,8 @@ fill: #f4f4fd;
 }
 
 /* logo */
-.logo-web {
+/* logo desk */
+/* .logo-web {
 font-family: "Raleway", sans-serif;
 font-style: normal;
 font-weight: 800;
@@ -465,7 +471,8 @@ text-transform: uppercase;
 text-decoration: none;
 color: #4D5AE5;
 margin-right: 76px;
-}
+} */
+/* logo desk */
 .logo-stu {
 font-family: 'Raleway', sans-serif;
 font-style: normal;
@@ -901,7 +908,7 @@ margin-right: 76px;
 /* ===============Mobile=============== */
 
 /* default settings */
-.menu-list {
+.menu {
     display: none;
 }
 .contact {
@@ -911,21 +918,29 @@ margin-right: 76px;
 /* default settings */
 
 .logo-web {
-
+font-family: "Raleway", sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-decoration: none;
+color: #4D5AE5;
+margin: 24px auto 22px 16px;
 }
+
 
 .mobile-btn-list {
     position: absolute;
     top: 24px;
-    right: 24px;
-    width: 16px;
+    right: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    cursor: pointer;
-    margin-top: 24px;
-    margin-right: 16px;
     border: 0;
     background-color: #FFFFFF;
     
@@ -934,6 +949,7 @@ margin-right: 76px;
     display: flex; 
     align-items: center;
     justify-content: center;
+    fill: #2E2F42;
 }
 
 .container {
@@ -944,9 +960,24 @@ margin-right: 76px;
     margin-right: auto;
 }
 
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+/* ===============Tablet=============== */
 @media screen and (min-wight: 768px) {
     .container {
         max-width: 768px;
+    }
+    .contact {
+        display: block;
+    }
+    .menu {
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
     }
 }
 
