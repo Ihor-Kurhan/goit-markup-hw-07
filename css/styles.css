@@ -907,7 +907,6 @@ margin-right: 76px;
 .contact {
     display: none;
 }
-
 /* default settings */
 
 .container {
@@ -983,8 +982,9 @@ margin-right: 76px;
         }
 
     .contact-container {
-        display: block;
-        gap: 40px;
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
     }
     .div-header {
         display: flex;
@@ -1021,6 +1021,7 @@ margin-right: 76px;
     }
     .contact-container {
         display: flex;
+        flex-direction: row;
         gap: 40px;
    }
  }
