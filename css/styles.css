@@ -148,10 +148,10 @@ img {display: block}
     align-items: center;
 }
 
-.contact-container {
+/* .contact-container {
     display: flex;
     gap: 40px;
-}
+} */
 
 /* order-btn, nav-btn */
 
@@ -965,7 +965,6 @@ margin-right: 76px;
     }
     .contact {
         display: block;
-        flex-direction: column;
     }
     .logo-web {
         margin: 24px auto 24px 16px;
