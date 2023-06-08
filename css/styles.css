@@ -102,12 +102,6 @@ img {display: block}
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
     
-    .menu {
-        display: none;
-        gap: 40px;
-        margin: 0;
-        padding: 0;
-    }
     .list {
         list-style: none;
         margin: 0;
@@ -917,41 +911,6 @@ margin-right: 76px;
 
 /* default settings */
 
-.logo-web {
-font-family: "Raleway", sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 1.17;
-display: flex;
-align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-text-decoration: none;
-color: #4D5AE5;
-margin: 24px auto 22px 16px;
-}
-
-
-.mobile-btn-list {
-    position: absolute;
-    top: 24px;
-    right: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border: 0;
-    background-color: #FFFFFF;
-    
-}
-.icon-mobile-btn-list {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    fill: #2E2F42;
-}
-
 .container {
     max-width: 428px;
     padding-left: 16px;
@@ -960,18 +919,57 @@ margin: 24px auto 22px 16px;
     margin-right: auto;
 }
 
+.logo-web {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4D5AE5;
+    margin: 24px auto 22px 16px;
+    }
+    
+    
+    .mobile-btn-list {
+        position: absolute;
+        top: 24px;
+        right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        border: 0;
+        background-color: #FFFFFF;
+        
+    }
+    .icon-mobile-btn-list {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        fill: #2E2F42;
+    }
+
 .nav-header {
     display: flex;
     align-items: center;
 }
 
 /* ===============Tablet=============== */
-@media screen and (min-wight: 768px) {
+@media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+      max-width: 768px;
     }
     .contact {
         display: block;
+        flex-direction: column;
+    }
+    .logo-web {
+        margin: 24px auto 24px 16px;
     }
     .menu {
         display: flex;
@@ -979,7 +977,8 @@ margin: 24px auto 22px 16px;
         margin: 0;
         padding: 0;
     }
-}
+  }
+
 
 @media screen and (min-wight: 1158px) {
     .container {
