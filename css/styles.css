@@ -51,7 +51,8 @@ body {font-family:var(--main-font-family);
 img {display: block}
 
 /* hero */
-.hero {background-color: #2e2f42;
+.hero {
+    background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office-1.jpg);
     background-repeat: no-repeat;
@@ -975,6 +976,54 @@ margin-right: 76px;
     display: flex;
     align-items: center;
 }
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+.mobile-menu-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 0;
+}
+
+.mobile-menu-container {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 40px;
+}
+.mobile-menu-list-container {
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu-list {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
 /* ===============Mobile=============== */
 
 
