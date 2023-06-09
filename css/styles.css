@@ -1005,11 +1005,11 @@ margin-right: 76px;
     padding-top: 80px;
     padding-left: 40px;
 }
-.mobile-menu-list-container {
+/* .mobile-menu-list-container {
     gap: 40px;
     margin: 0;
     padding: 0;
-}
+} */
 
 .mobile-menu-list {
     font-family: var(--main-font-family);
@@ -1023,6 +1023,43 @@ margin-right: 76px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
+.mobile-contact-container {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+.mobile-contact-container-list {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contact-list-mail {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-network-list-footer-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+
+}
+.contact-mobile {
+    font-style: normal;
+    margin-left: auto;
+
+} 
 
 /* ===============Mobile=============== */
 
@@ -1113,5 +1150,4 @@ margin-right: 76px;
     letter-spacing: 0.02em;
     }
  }
-/* ===============Desktop=============== */   
-
+/* ===============Desktop=============== */
