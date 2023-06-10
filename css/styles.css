@@ -1004,14 +1004,14 @@ margin-right: 76px;
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding-top: 80px;
     padding-left: 40px;
 }
-/* .mobile-menu-list-container {
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-} */
+
+.mobile-menu-list-container {
+    margin-bottom: auto;
+}
 
 .mobile-menu-list {
     font-family: var(--main-font-family);
@@ -1070,9 +1070,7 @@ margin-right: 76px;
 }
 .contact-mobile {
     font-style: normal;
-    margin-left: auto;
-
-} 
+}
 
 .mobile-menu-list:hover,
 .mobile-menu-list:focus {
