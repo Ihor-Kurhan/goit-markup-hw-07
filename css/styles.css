@@ -1222,7 +1222,43 @@ margin-bottom: 16px;
         margin-bottom: 36px;
         text-transform:none;
     }
-  }
+    
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        align-items: baseline;
+        justify-content: center;
+    }
+    
+    .footer-form {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            
+    }
+    
+    .footer-form-label-input {
+        width: 264px;
+    }
+    
+    .sub-btn {
+        margin-left: 24px;
+    }
+    
+    .social-media-container {
+        align-items: flex-start;
+    }
+
+    .logo-web-foot {
+        justify-content: flex-start;
+    }
+
+    .footer-form-container {
+        align-items: flex-start;
+    }
+
+  } 
 
 /* ===============Tablet=============== */
 
