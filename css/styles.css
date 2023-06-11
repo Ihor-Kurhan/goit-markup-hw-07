@@ -525,7 +525,7 @@ width: calc((1440px - 48px) / 3);
     padding: 100px 0;
 }
 .logo-web-foot {
-    font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
 font-size: 18px;
@@ -535,9 +535,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 text-decoration: none;
 color: #4D5AE5;
-display: inline-block;
+display: flex;
+justify-content: center;
+/* display: inline-block; */
 margin-bottom: 16px;
-margin-right: 76px;
+/* margin-right: 76px; */
 }
 .logo-stu-foot {
     font-family: 'Raleway', sans-serif;
@@ -555,7 +557,6 @@ margin-right: 76px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: baseline;
 }
 
 .footer-main {
@@ -592,7 +593,10 @@ margin-right: 76px;
 
 /* =================== footer form ===================*/
 .footer-form-container {
-    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 80px; */
 }
 
 .footer-form-txt {
