@@ -30,7 +30,8 @@
             <li><a class="contact-list link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
-    <button type="button" class="mobile-btn-list">
+    <button type="button" class="mobile-btn-list js-open-menu" aria-expanded="false"
+    aria-controls="mobile-menu">
     <svg class="icon-mobile-btn-list" width="32" height="22">
         <use href="./images/icons.svg#icon-mobile-btn-list"></use>
     </svg>
@@ -38,8 +39,8 @@
     </div>
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-        <div class="container mobile-menu-container">
-            <button class="mobile-menu-close-btn">
+        <div class="container mobile-menu-container js-menu-container" id="mobile-menu">
+            <button class="mobile-menu-close-btn js-close-menu">
                 <svg class="mobile-menu-close-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -416,6 +417,13 @@
     </form>
     </div>
     </div> -->
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>

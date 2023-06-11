@@ -1003,7 +1003,8 @@ margin-right: 76px;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
+    height: 100%;
     padding-top: 80px;
     padding-left: 40px;
 }
@@ -1048,7 +1049,7 @@ margin-right: 76px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: #4D5AE5;;
+    color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 40px;
 }
@@ -1079,9 +1080,13 @@ margin-right: 76px;
     color: #404BBF;
 }
 
-.mobile-contact-list-mail .mobile-contact-list-tel:hover,
-.mobile-contact-list-mail .mobile-contact-list-tel:focus {
+.mobile-contact-list-mail:hover,
+.mobile-contact-list-mail:focus {
     color: #404BBF;
+}
+
+.mobile-contact-list-tel:focus {
+    color: #4D5AE5;
 }
 
 /* ===============Mobile=============== */
