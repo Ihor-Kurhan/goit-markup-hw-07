@@ -54,13 +54,21 @@ img {display: block}
 .hero {
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office-1.jpg);
+    url(../images/mobile/people-office-1-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 188px 0;
     max-width: 1440px;
     margin: 0 auto;
     background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/mobile/people-office-1-mobile@2x.jpg');
+  }
 }
 
 
@@ -1210,6 +1218,7 @@ margin-bottom: 16px;
         text-transform:none;
     }
   }
+  
 /* ===============Tablet=============== */
 
 
