@@ -554,15 +554,19 @@ margin-right: 76px;
 .footer-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     align-items: baseline;
 }
 
 .footer-main {
-    margin-right: 120px;
+    /* margin-right: 120px; */
     margin-bottom: 72px;
 }
 
 .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 72px;
 }
 
