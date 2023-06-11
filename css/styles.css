@@ -1112,7 +1112,8 @@ margin-right: 76px;
 .features-container-list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-self: center;
+    align-items:center;
     gap: 24px;
 }
 
