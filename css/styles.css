@@ -1070,6 +1070,7 @@ margin-right: 76px;
 .social-network-list-footer-mobile {
     display: flex;
     gap: 56px;
+    margin-bottom: 40px;
 }
 .contact-mobile {
     font-style: normal;
