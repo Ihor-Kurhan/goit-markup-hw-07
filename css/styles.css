@@ -575,10 +575,10 @@ margin-bottom: 16px;
     gap: 72px;
 }
 
-.footer-main {
-    /* margin-right: 120px; */
-    /* margin-bottom: 72px; */
-}
+/* .footer-main {
+    margin-right: 120px;
+     margin-bottom: 72px;
+} */
 
 .social-media-container {
     display: flex;
@@ -1240,10 +1240,9 @@ margin-bottom: 16px;
     }
     
     .footer-form {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
     }
     
     .footer-form-label-input {
@@ -1363,10 +1362,30 @@ margin-bottom: 16px;
 
     .footer-main {
         margin-right: 120px;
-        margin-bottom: 72px;
+        /* margin-bottom: 72px; */
     }
 
-    .footer-container {}
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .small-footer-text {
+        width: 264px;
+    }
+
+    .social-media-container {
+        margin-right: 80px;
+    }
+
+    .footer-form-label-input {
+        margin-right: 24px;
+    }
+
+    .sub-btn {
+        margin-left: 0;
+    }
 
  }
 /* ===============Desktop=============== */
