@@ -1086,8 +1086,10 @@ margin-bottom: 16px;
 }
 
 .mobile-menu-list-container {
-    gap: 24px 0;
-    margin-bottom: auto;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    /* margin-bottom: auto; */
 }
 
 .mobile-menu-list {
@@ -1311,6 +1313,7 @@ margin-bottom: 16px;
     .active {
         /* position: relative; */
         color: #404bbf;
+    
     }
 
     .hero {
