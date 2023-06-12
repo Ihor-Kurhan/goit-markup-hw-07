@@ -57,7 +57,7 @@ img {display: block}
     url(../images/mobile/people-office-1-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 188px 0;
+    padding: 112px 0;
     max-width: 1440px;
     margin: 0 auto;
     background-position: center;
@@ -737,7 +737,8 @@ margin-bottom: 16px;
 
 .modal-window {
     position: absolute;
-    width: 408px;
+    width: 100%;
+    /* width: 408px; fo min width 768*/
     min-height: 576px;
     background: #FCFCFC;
     top: 50%;
@@ -947,7 +948,7 @@ margin-bottom: 16px;
     fill: transparent;
 }
 
-/* Mobile, Tablet, Desktop */
+/* =============================================Mobile, Tablet, Desktop============================================= */
 
 /* ===============Mobile=============== */
 
@@ -962,6 +963,17 @@ margin-bottom: 16px;
 .div-icon-features {
     display: none;
 }
+
+@media screen and (min-width: 428px) {
+    .social-network-list-footer-mobile {
+        gap: 56px;
+    }
+    .modal-window {
+        width: 408px;
+    }
+
+}
+
 /* default settings */
 
 .title-index {
@@ -1074,6 +1086,7 @@ margin-bottom: 16px;
 }
 
 .mobile-menu-list-container {
+    gap: 24px 0;
     margin-bottom: auto;
 }
 
@@ -1084,7 +1097,7 @@ margin-bottom: 16px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding: 24px 0;
+    /* padding: 24px 0; */
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -1133,7 +1146,8 @@ margin-bottom: 16px;
 
 .social-network-list-footer-mobile {
     display: flex;
-    gap: 56px;
+    /* gap: 56px; */
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 .contact-mobile {
@@ -1175,6 +1189,7 @@ margin-bottom: 16px;
     display: flex;
     justify-content: center
 }
+
 
 /* Section 2 */
 
@@ -1272,6 +1287,14 @@ margin-bottom: 16px;
         justify-content: center;
     }
 
+    .container-customers {
+        width: 552px;
+    }
+
+    .customers-svg {
+        width: calc((100% - 48px) / 3);
+    }
+
     .features-container-list {
         flex-wrap: wrap;
         flex-direction: row;
@@ -1283,6 +1306,11 @@ margin-bottom: 16px;
 
     .firstlist-features-container {
         width: 356px;
+    }
+
+    .active {
+        /* position: relative; */
+        color: #404bbf;
     }
 
     .hero {
@@ -1304,6 +1332,10 @@ margin-bottom: 16px;
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/tablet/people-office-1-tablet@2x.jpg');
     }
   }
+
+  /* .modal-window {
+    width: 408px;
+} */
 
   } 
 
