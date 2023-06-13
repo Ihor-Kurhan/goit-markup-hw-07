@@ -61,16 +61,35 @@ img {display: block}
     max-width: 428px;
     margin: 0 auto;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    gap: 72px 16px;
+    flex-wrap: wrap;
 }
-
+/* 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
 .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/mobile/people-office-1-mobile@2x.jpg');
   }
-}
+} */
 
+@media (min-width: 427px) {
+    .hero {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/tablet/people-office-1-tablet.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-1@2x.jpg');
+    }
+  }
+    
+}
 
 .title-index {
     font-family: var(--main-font-family);
@@ -419,18 +438,6 @@ fill: #f4f4fd;
     /* width: calc((100% - 120px) / 6); */
     width: 190px;
     height: 88px;
-}
-
-.customers-list {
-    display: flex;
-    justify-content: center;
-    /* flex-direction: column; */
-    /* width: 1128px; */
-    /* gap: 24px; */
-    /* column-gap: 16px;
-    row-gap: 72px; */
-    gap: 72px 16px;
-    flex-wrap: wrap;
 }
 
 .customers-title {
@@ -999,11 +1006,6 @@ margin-bottom: 16px;
     margin-right: auto;
 }
 
-/* .hero {
-    background-image: url(../images/mobile/people-office-1-mobile.jpg);
-    
-} */
-
 .logo-web {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -1200,24 +1202,6 @@ margin-bottom: 16px;
 
 /* Section 2 */
 
-
-@media (min-width: 428px) {
-    .hero {
-        max-width: 768px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/tablet/people-office-1-tablet.jpg);
-    }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-  .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office-1@2x.jpg');
-    }
-  }
-    
-}
-
-
 /* ===============Mobile=============== */
 
 
@@ -1333,18 +1317,16 @@ margin-bottom: 16px;
         width: 356px;
     }
 
-    @media screen and (min-width: 768px) {
     .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/tablet/people-office-1-tablet.jpg);
     padding: 112px 0;
     max-width: 1158px;
     }
-}
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/tablet/people-office-1-tablet@2x.jpg');
     }
@@ -1449,7 +1431,7 @@ margin-bottom: 16px;
         line-height: 1.2;
     }
     
-    .customers-list {
+    .hero {
         gap: 24px;
     }
 
