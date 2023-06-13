@@ -1204,6 +1204,7 @@ margin-bottom: 16px;
     flex-wrap: wrap;
 }
 
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -1212,11 +1213,11 @@ margin-bottom: 16px;
   }
 }
 
-@media (min-width: 427px) {
+@media (min-width: 429px) {
     .hero {
-        max-width: 767px;
+        max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/mobile/people-office-1-mobile.jpg);
+    url(../images/tablet/people-office-1-tablet.jpg);
     }
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
     screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -1232,6 +1233,8 @@ margin-bottom: 16px;
 
 
 /* ===============Tablet=============== */
+
+
 @media screen and (min-width: 768px) {
     .container {
       max-width: 768px;
@@ -1323,7 +1326,7 @@ margin-bottom: 16px;
     }
 
     .container-customers {
-        width: 552px;
+        width: 584px;
     }
 
     .customers-svg {
@@ -1370,7 +1373,14 @@ margin-bottom: 16px;
     width: 408px;
 } */
 
+
+
   } 
+  .modal-window {
+    /* width: 408px; */
+    top: 20px;
+    transform: translate(-50%);
+}
 
 /* ===============Tablet=============== */
 
