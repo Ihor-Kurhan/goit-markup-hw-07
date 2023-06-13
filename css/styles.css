@@ -399,16 +399,14 @@ fill: #f4f4fd;
 
 .customers-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 72px 16px;
+    /* justify-content: center; */
     /* flex-direction: column; */
     /* width: 1128px; */
     /* gap: 24px; */
     /* column-gap: 16px;
     row-gap: 72px; */
-    gap: 72px 16px;
-    flex-wrap: wrap;
-
-    
 }
 
 .customers-svg {
