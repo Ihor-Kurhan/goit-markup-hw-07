@@ -1417,7 +1417,8 @@ margin-bottom: 16px;
     }
 
     .firstlist-features-container {
-        margin-bottom: 72px;
+        margin: 0;
+        /* margin-bottom: 72px; */
         width: 264px;
     }
 
