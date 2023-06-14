@@ -255,11 +255,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     display: flex;
     gap: 24px;} */
 
-.firstlist-features-container {
+    
+/* .firstlist-features-container {
     margin-bottom: 72px;
     /* width: 356px; */
     /* width: calc((100% - 72px) / 4); */
-}
+ */
 
 /* h3 What are we doing */
 .wawd {
@@ -1356,7 +1357,7 @@ margin-bottom: 16px;
 
     .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/tablet/people-office-1-tablet.jpg);
+    url(../images/people-office-1.jpg);
     padding: 112px 0;
     max-width: 1158px;
     }
