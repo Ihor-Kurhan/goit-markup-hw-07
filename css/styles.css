@@ -255,12 +255,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cub
     display: flex;
     gap: 24px;} */
 
-    
-/* .firstlist-features-container {
+.firstlist-features-container {
     margin-bottom: 72px;
     /* width: 356px; */
     /* width: calc((100% - 72px) / 4); */
- */
+}
 
 /* h3 What are we doing */
 .wawd {
@@ -717,6 +716,7 @@ margin-bottom: 16px;
 /* Modal */
 .backdrop {
     position: fixed;
+    overflow: scroll;
     top: 0;
     left: 0;
     width: 100%;
