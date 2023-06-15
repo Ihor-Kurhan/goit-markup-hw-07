@@ -437,7 +437,7 @@ a.svg-link {
 .team-li {
     border-radius: 0px 0px 4px 4px;
     /* margin-bottom: 72px; */
-    gap: 72px;
+    /* gap: 72px; */
 }
 
 /* h2 */
@@ -1325,6 +1325,7 @@ margin-bottom: 16px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 48px 24px;
     }
 
     .container-customers {
